@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  header 
+    h1= 'Message Board'
+    p= 'speak your mind freely'
+    .button-container
+      a(href=`http://localhost:${process.env.PORT || 3000}/new`): button.compose= "got something to say?"
+  main
+    each message in messages 
+      section.message-card 
+        h2= message.title
+        p.description= message.text
+        footer 
+          p.username= message.user
+          p.date= message.added 

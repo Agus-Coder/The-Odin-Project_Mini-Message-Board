@@ -1,0 +1,42 @@
+h1 {
+  font-size: 3rem;
+}
+
+h2,
+#title {
+  font-size: 2.4rem;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: aliceblue;
+  background-color: black;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.message-card h2 {
+  color: rgb(163, 19, 19);
+  background-color: rgb(224, 166, 94);
+
+}
+
+.description {
+  background-color: saddlebrown;
+}
+
+.message-card {
+  width: 20vw;
+  border: green solid 1px;
+}
+
+main {
+  border: red solid 1px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+}
